@@ -349,18 +349,24 @@ header p{
 
 
     @media only screen and (max-width: 420px){
+
         .logo{
             width: 50px;
             height: 50px;
         }
         
         .church-name{
-            margin: 10px;
+            margin: 15px 10px 10px 10px;
             font-size: medium;
         }
 
         .join{
             font-size: xx-small;
+            padding: 5px;
+        }
+
+        nav{
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.466);
         }
 
         nav ul{
@@ -368,22 +374,26 @@ header p{
         }
 
         .bg{
-            height: 35vh;
+            height: 40vh;
         }
 
         header{
-            height: 35vh;
+            height: 40vh;
         }
 
         header h1{
-            margin: 0px 0px;
-            font-size: medium;
+            margin: 0px 40px;
+            font-size: 1.5em;
+            top:12%
         }
         header hr{
             height: 2px;
+            top:12%
+
         }
         header p{
             font-size: small;
+            top: 12%;
         }
 
         .section{
@@ -391,11 +401,16 @@ header p{
         }
 
         .section p{
-            font-size: small;
+            font-size: 1em;
+        }
+
+        .fnt{
+            font-size: 2em;
         }
 
         .section h2{
-            font-size: medium;
+            font-size: larger;
+            font-weight: bold;
         }
 
         .about-section p{
