@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@600&family=Poppins&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans;
+}
+
+:root{
+    --primary-text-color: #141829;
+    --secondary-text-color: #2b2f3e;
+    --background-color: #1f2f4a;
+    
+}
+
+  /*Utility Class*/
+.section{
+    margin-inline: 20px;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+}
+
+.bg{
+    width: 100%;
+    height: 80vh;
+    background-color: #1f2f4aa8;
+}
+
+ /* ////// */
+
+nav{
+    display: flex;
+    margin-inline: 100px;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    height: 70px;
+}
+
+.church-name{
+    display: none;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+}
+
+nav li a{
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+nav li a:hover{
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 25px;
+    background-color: #8a8a8a63;
+    transition: 0.5s;
+    box-shadow: 0 0px 12px rgba(0, 0, 0, 0.153);
+}
+
+.join{
+    padding: 5px 8px;
+    background-color: #fff;
+    font-size: small;
+    font-weight: bold;
+    color: var(--primary-text-color);
+    align-self: center;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+header{
+    width: 100%;
+    height: 80vh;
+    background-image: url(image/church.jpg) ;
+    background-size: cover;
+    background-position: center;
+    justify-content: space-around;
+    transition: all 1s ease-in-out;
+}
+
+header:hover{
+    background-position: top;
+}
+
+header h1{
+    position: relative;
+    top: 20%;
+    text-align: center;
+    align-self: center;
+    font-size: 2.3em;
+    color: #96cdff;
+}
+header hr{
+    position: relative;
+    left: 42%;
+    right: 20%;
+    top: 30%;
+    width: 15%;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    opacity: 80%;
+
+}
+header p{
+    position: relative;
+    top: 35%;
+    font-size: large;
+    color: white;
+    text-align: center;
+}
+
+.about-section{
+    margin-inline: 20px;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.about-img{
+    width: 50vw;
+    margin-top: 20px;
+}
+
+.colume{
+    display: flex;
+    margin-top: 20px;
+    align-items: top;
+    justify-content: center;
+    gap: 15px;
+    text-align: left;
+}
+
+.colume p{
+    width: 25%;
+}
+
+.daily-verse-section{
+    display: flex;
+    padding: 20px 0px;
+    padding-inline: 100px;
+    align-items: center;
+    background-color: #141829;
+    color: white;
+    justify-content: space-between;
+}
+
+.left{
+    width: 45%;
+}
+
+.right{
+    width: 45%;
+}
+
+.left p{
+    font-weight: 100;
+    color: #d7d7d7;
+}
+
+.right h3{
+    font-weight: 200;
+}
+
+.comma{
+    width: 30px;
+    height: 30px;
+    padding: 2px 0px;
+    text-align: center;
+    font-size: xx-large;
+    background-color: white;
+    border-radius: 50%;
+    color: var(--primary-text-color);
+}
+
+.date{
+    width: fit-content;
+    padding: 6px 12px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    background-color: #ffffff27;
+}
+
+.article{
+    margin-inline: 100px;
+    margin-top: 30px;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.blog{
+    max-width: 30%;
+    min-width: 30%;
+    max-height: 25%;
+    min-height: 25%;
+    text-align: center;
+    order: 0;
+    margin: 20px 10px;
+    color: #1f2f4a;
+    background-color: #f1f1fe;
+    border-radius: 15px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.169);
+}
+
+.article-section button{
+    padding: 5px 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: #141829;
+    color: white;
+
+}
+
+.testimonials{
+    padding: 20px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.profile{
+    width: 100px;
+}
+
+.test-verse{
+    width: 50%;
+    padding: 50px;
+    background-image: url(https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5af98b9f779b5a7d0a80351e_Oval%201.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    color: var(--primary-text-color);
+}
+
+.carousel{
+    width: 50%;
+}
+
+.timings{
+    flex-flow: wrap;
+    justify-content: center;
+    display: flex;
+}
+
+.worship{
+    max-width: 30%;
+    min-width: 30%;
+    text-align: center;
+    order: 0;
+    margin: 20px 10px;
+    padding: 1.5%;
+    color: #1f2f4a;
+    background-color: #f1f1fe;
+    border-radius: 15px;
+}
+
+.worship button{
+    border: none;
+    padding: 5px 10px;
+    margin: 10px;
+    background-color: #fff;
+    color: var(--secondary-text-color);
+    border-radius: 8px;
+}
+
+
+
+
+
+
+/* Tablet Screen 768px*/
+@media only screen and (max-width: 800px){
+    nav{
+        margin-inline: 0px;
+        padding: 0px 10px;
+        box-shadow: 0 6px 12px 5px rgba(0, 0, 0, 0.189);
+        background-color: white;
+    }
+    .church-name{
+        display: block;
+        margin-top: 18px;
+        margin-left: 10px;
+        width: 50vw;
+        color: #1f2f4a;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    .join{
+        background-color: #141829;
+        color: white;
+        margin: 0;
+        padding: 10px 15px;
+    }
+
+    .bg{
+        height: 50vh;
+    }
+    header{
+        height: 50vh;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    header h1{
+        text-align: center;
+        margin-inline: 10vw;
+        font-size: x-large;
+    }
+
+    .article{
+        margin-inline: 0;
+    }
+
+    .colume{
+        margin-inline: 10vw;
+        display: block;
+    }
+
+    .about-img{
+        width: 70vw;
+    }
+
+    .colume p{
+        width: auto;
+    }
+
+
+
+    @media only screen and (max-width: 420px){
+        .logo{
+            width: 50px;
+            height: 50px;
+        }
+        
+        .church-name{
+            margin: 10px;
+            font-size: medium;
+        }
+
+        .join{
+            font-size: xx-small;
+        }
+
+        nav ul{
+            display: none;
+        }
+
+        .bg{
+            height: 35vh;
+        }
+
+        header{
+            height: 35vh;
+        }
+
+        header h1{
+            margin: 0px 0px;
+            font-size: medium;
+        }
+        header hr{
+            height: 2px;
+        }
+        header p{
+            font-size: small;
+        }
+
+        .section{
+            margin-inline: 05px;
+        }
+
+        .section p{
+            font-size: small;
+        }
+
+        .section h2{
+            font-size: medium;
+        }
+
+        .about-section p{
+            text-align: justify;
+        }
+
+        .colume{
+            margin-inline: 0px;
+        }
+
+        .daily-verse-section{
+            padding: 10px;
+        }
+
+        .right h3, .right p{
+            font-size: smaller;
+        }
+        .left p{
+            margin-bottom: 0;
+            font-size: smaller;
+        }
+
+        .left h1 {
+            font-size: large;
+        }
+
+        .comma{
+            margin-right: 20px;
+        }
+        .date{
+            font-size: smaller;
+            margin-bottom: 8px;
+        }
+
+        .article{
+            display: block;
+            justify-content: center;
+        }
+
+        .blog{
+            max-width: 100%;
+            min-width: 100%;
+        }
+
+        .testimonials{
+            display: block;
+        }
+
+        .test-verse{
+            width: 100%;
+        }
+
+        .carousel{
+            width: 100%;
+            margin: 0px;
+        }
+
+        .timings{
+            margin: 0px 10px;
+            flex-wrap: wrap;
+        }
+        .worship{
+            max-width: 40%;
+            min-width: 40%;
+            font-size: small;
+        }
+        
+
+    }
+
+    
+    
+}
